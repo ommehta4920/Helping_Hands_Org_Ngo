@@ -1,0 +1,143 @@
+﻿.container{
+    background-color: white;
+    box-shadow: 0 10px 20px black;
+    margin-top: -2%;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    max-width: 50vw;
+    padding: 25px 30px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.container .title{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+
+.container .title::before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 30px;
+    left: 0;
+    bottom: 0;
+    border-radius: 5px;
+    background: #ff6f0f;
+}
+
+.container .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+form .user-details .input-box{
+    width: calc(100% / 2 - 20px);
+    margin-bottom: 15px;
+}
+
+.user-details .input-box .details{
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block;
+    margin-left: 15px;
+}
+
+.user-details .input-box .txtuser_id,
+.user-details .input-box .txtuser_name,
+.user-details .input-box .txtemail,
+.user-details .input-box .txtph_no,
+.user-details .input-box .txtpassword,
+.user-details .input-box .txtc_password{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.user-details .input-box .txtuser_id:focus,
+.user-details .input-box .txtuser_name:focus,
+.user-details .input-box1 .txtaddress:focus,
+.user-details .input-box .txtemail:focus,
+.user-details .input-box .txtph_no:focus,
+.user-details .input-box .txtpassword:focus,
+.user-details .input-box .txtc_password:focus{
+    border-color: #ff6f0f;
+}
+
+form .user-details .input-box1{
+    width: calc(100% / 1);
+    margin-bottom: 15px;
+}
+
+.user-details .input-box1 .details{
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-left: 15px;
+    display: block;
+}
+
+.user-details .input-box1 .txtaddress{
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    resize: none;
+    width: 100%;
+}
+
+#main_form .button{
+    height: 45px;
+    margin: 10px 0px;
+}
+
+#main_form .button .btnedit{
+    height: 100%;
+    width: 100%;
+    outline:none;
+    color: #fff;
+    background: #ff6f0f;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    transition: all 1s ease;
+}
+
+#main_form .button .btnedit:hover{
+    text-shadow: 0 5px 20px white;
+    box-shadow: 0 5px 20px black;
+    cursor: pointer;
+}
+
+.login-link{
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: grey;
+}
+
+.login-link .login_link{
+    font-size: 16px;
+    text-decoration: none;
+    color: #ff6f0f;
+    transition: all 0.3s ease;
+}
+
+.login-link .login_link:hover{
+    text-decoration: underline;
+    text-shadow: 0 5px 20px #ff6f0f;
+}

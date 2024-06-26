@@ -1,0 +1,84 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="main.master.cs" Inherits="HHO_NGO.master_pages.main" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Helping Hands Organization</title>
+    <link rel="stylesheet" href="../css/main_master.css" />
+    <link rel="icon" type="image/x-icon" href="../img/website-logo.png"/>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <!-- header -->
+        <div class="banner">
+            <div class="navbar">
+                <div class="logo">
+                    <asp:HyperLink runat="server" NavigateUrl="~/web_pages/home.aspx">
+                     <asp:Image runat="server" ImageUrl="~/img/website-logo.png" Width="10%" />
+                    </asp:HyperLink>
+                </div>
+                <div class="nav-links">
+                    <ul>
+                        <li>
+                            <asp:HyperLink runat="server" NavigateUrl="~/web_pages/home.aspx" Text="Home"></asp:HyperLink>
+                        </li>
+                        <li>
+                            <asp:HyperLink runat="server" NavigateUrl="~/web_pages/donation.aspx" Text="Donation"></asp:HyperLink>
+                        </li>
+                        <li>
+                            <asp:HyperLink runat="server" NavigateUrl="~/web_pages/event_gallery.aspx" Text="Event"></asp:HyperLink>
+                        </li>
+                        <li>
+                            <asp:HyperLink runat="server" NavigateUrl="~/web_pages/contact.aspx" Text="Contact"></asp:HyperLink>
+                        </li>
+                        <li>
+                            <asp:HyperLink runat="server" NavigateUrl="~/web_pages/login.aspx" Text="Login"></asp:HyperLink>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <footer>
+            <div class="footer-content">
+                <h3>Helping Hands <span>Organization </span></h3>
+                <p>At Helping Hands Organization, we are dedicated to making a positive impact in the lives of those who need it the most. As a non-profit organization, our mission is to provide aid and support to individuals and communities in need, regardless of age, gender, or social background.</p>
+                <ul class="socials">
+                    <li>
+                        <asp:HyperLink runat="server">
+                      <asp:Image runat="server" ImageUrl="~/img/faceb.svg" AlternateText="Facebook" />
+                        </asp:HyperLink>
+                    </li>
+                    <li>
+                        <asp:HyperLink runat="server">
+                      <asp:Image runat="server" ImageUrl="~/img/tweet.svg" AlternateText="Twitter" />
+                        </asp:HyperLink>
+                    </li>
+                    <li>
+                        <asp:HyperLink runat="server">
+                      <asp:Image runat="server" ImageUrl="~/img/external-youtube-multimedia-prettycons-flat-prettycons.png" AlternateText="YouTube" width="80%" />
+                        </asp:HyperLink>
+                    </li>
+                    <li>
+                        <asp:HyperLink runat="server">
+                      <asp:Image runat="server" ImageUrl="~/img/Igram.svg" AlternateText="Instagram"/>
+                        </asp:HyperLink>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright &COPY;2023 <span>HelpingHandsOrganization. </span></p>
+            </div>
+        </footer>
+    </form>
+</body>
+</html>

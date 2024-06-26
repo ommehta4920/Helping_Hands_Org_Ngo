@@ -1,0 +1,103 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background: #f1f1f1;
+}
+
+.sidebar{
+    position: fixed;
+    min-height: 100vh;
+    width: 19vw;
+    background-color: #001d23;
+    box-shadow: 0 0 10px black;
+}
+
+.sidebar .nav-links{
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .logo{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff6f0f;
+    margin-left: 20px;
+    cursor:default;
+}
+
+.sidebar .logo span{
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-left: 10px;
+}
+
+.sidebar ul{
+    margin-top: 30px;
+    display: block;
+}
+
+.sidebar ul li{
+    list-style: none;
+    padding: 8px 0;
+    transition: all 1s ease;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar ul li a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    transition: all ease 1s;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar ul li .icons{
+    width: 8%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+.sidebar ul li:hover{
+    box-shadow: 0 0.5px 10px white;
+    cursor: pointer;
+}
+
+.sidebar .nav-links .btn_logout{
+    margin-left: 26px;
+    margin-top: 10px;
+    border-radius: 50%;
+    transition: all ease 1s;
+}
+
+.sidebar .nav-links .btn_logout:hover{
+    box-shadow: 0px 1px 10px white;
+}
+
+.container1{
+    position: absolute;
+    right: 0;
+    width: 80vw;
+    height: 100vh;
+}
+
+.container1 .display{
+    position:relative;
+    margin-top: 10vh;
+    min-height: 100vh;
+    margin-left: 20px;
+}

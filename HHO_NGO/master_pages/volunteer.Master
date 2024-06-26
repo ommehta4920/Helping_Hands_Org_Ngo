@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="volunteer.master.cs" Inherits="HHO_NGO.master_pages.volunteer" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Volunteer Dashboard</title>
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="icon" type="image/x-icon" href="../img/website-logo.png" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="main_form" runat="server">
+        <div class="sidebar">
+            <div class="logo">
+                <asp:Image ID="logo_img" ImageUrl="~/img/website-logo.png" Width="45px" runat="server" />
+                <span>Helping Hands organization</span>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li>
+                        <asp:HyperLink ID="home" NavigateUrl="~/Web_Pages/volunteer/home.aspx" runat="server">
+                            <asp:Image ID="Image1" ImageUrl="~/icons/home.png" runat="server" CssClass="icons" />Home
+                        </asp:HyperLink></li>
+                    <li>
+                        <asp:HyperLink ID="profile" NavigateUrl="~/web_pages/volunteer/profile.aspx" runat="server">
+                            <asp:Image ID="Image2" ImageUrl="~/icons/profile-user.png" runat="server" CssClass="icons" />Profile
+                        </asp:HyperLink></li>
+                    <li>
+                        <asp:HyperLink ID="collection_task" NavigateUrl="~/Web_Pages/volunteer/task.aspx" runat="server">
+                            <asp:Image ID="Image3" ImageUrl="~/icons/delivery (1).png" runat="server" CssClass="icons" />
+                            Collection Task
+                        </asp:HyperLink></li>
+                    <li>
+                        <asp:HyperLink ID="event_camp" NavigateUrl="~/Web_Pages/volunteer/list_event.aspx" runat="server">
+                            <asp:Image ID="Image4" ImageUrl="~/icons/event (1).png" runat="server" CssClass="icons" />Events / Camps
+                        </asp:HyperLink></li>
+                    <li>
+                        <asp:HyperLink ID="delete_acc" NavigateUrl="~/web_pages/volunteer/delete_profile.aspx" runat="server">
+                            <asp:Image ID="Image5" ImageUrl="~/icons/remove-user.png" runat="server" CssClass="icons" />Delete Profile
+                        </asp:HyperLink></li>
+                </ul>
+                <asp:ImageButton runat="server" ID="logout" ImageUrl="~/img/shutdown.png" Width="10%" CssClass="btn_logout" ToolTip="Logout" OnClick="logout_Click" />
+            </div>
+        </div>
+
+        <div class="container1">
+            <div class="display">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

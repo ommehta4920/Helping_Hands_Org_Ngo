@@ -1,0 +1,70 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="donor.master.cs" Inherits="HHO_NGO.master_pages.donor" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donor Dashboard</title>
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="icon" type="image/x-icon" href="../img/website-logo.png" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+     <form id="main_form" runat="server">
+        <div class="sidebar">
+            <div class="logo">
+                <asp:Image ID="logo_img" ImageUrl="~/img/website-logo.png" Width="45px" runat="server" />
+                <span>Helping Hands organization</span>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li id="li_home">
+                        <asp:HyperLink ID="home" NavigateUrl="~/web_pages/donor/home.aspx" runat="server">
+                            <asp:Image ID="Image1" ImageUrl="~/icons/home.png" runat="server" CssClass="icons" />Home
+                        </asp:HyperLink></li>
+                    <li>
+                        <asp:HyperLink ID="profile" NavigateUrl="~/Web_Pages/donor/profile.aspx" runat="server">
+                            <asp:Image ID="Image2" ImageUrl="~/icons/profile-user.png" runat="server" CssClass="icons" />Profile
+                        </asp:HyperLink></li>
+                    <li>
+                        <asp:HyperLink ID="donation" NavigateUrl="~/Web_Pages/donor/donation.aspx" runat="server">
+                            <asp:Image ID="Image3" ImageUrl="~/icons/donation (1).png" runat="server" CssClass="icons" />Make Donation
+                        </asp:HyperLink></li>
+                    <li>
+                        <asp:HyperLink ID="feedback" NavigateUrl="~/Web_Pages/donor/feedback.aspx" runat="server">
+                            <asp:Image ID="Image4" ImageUrl="~/icons/feedback (2).png" runat="server" CssClass="icons" />Give Feedback
+                        </asp:HyperLink></li>
+                    <li>
+                        <asp:HyperLink ID="donation_info" NavigateUrl="~/Web_Pages/donor/list_donation.aspx" runat="server">
+                            <asp:Image ID="Image5" ImageUrl="~/icons/file (1).png" runat="server" CssClass="icons" />Donation History
+                        </asp:HyperLink></li>
+                    <li>
+                        <asp:HyperLink ID="delivery" NavigateUrl="~/Web_Pages/donor/list_donation_delivery.aspx" runat="server">
+                            <asp:Image ID="Image8" ImageUrl="~/icons/donation (1).png" runat="server" CssClass="icons" />Delivery Details
+                        </asp:HyperLink></li>
+                    <li>
+                        <asp:HyperLink ID="feedback_list" NavigateUrl="~/Web_Pages/donor/list_feedback.aspx" runat="server">
+                            <asp:Image ID="Image6" ImageUrl="~/icons/feedback (1).png" runat="server" CssClass="icons" />Your Feedbacks
+                        </asp:HyperLink></li>
+                    <li>
+                        <asp:HyperLink ID="delete_acc" NavigateUrl="~/Web_Pages/donor/delete_profile.aspx" runat="server">
+                            <asp:Image ID="Image7" ImageUrl="~/icons/remove-user.png" runat="server" CssClass="icons" />Delete Profile
+                        </asp:HyperLink></li>
+                </ul>
+                <asp:ImageButton runat="server" ID="logout" ImageUrl="~/img/shutdown.png" Width="10%" CssClass="btn_logout" ToolTip="Logout" OnClick="logout_Click" />
+            </div>
+        </div>
+
+        <div class="container1">
+            <div class="display">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

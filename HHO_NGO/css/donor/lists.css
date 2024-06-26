@@ -1,0 +1,33 @@
+﻿.container{
+    background-color: white;
+    box-shadow: 0 10px 20px black;
+    margin-top: -2%;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    max-width: 70vw;
+    padding: 25px 30px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.container .title{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+
+.container .title::before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 30px;
+    left: 0;
+    bottom: 0;
+    border-radius: 5px;
+    background: #ff6f0f;
+}
+
+.grid_view{
+    margin-top: 15px;
+    text-align: center;
+}
